@@ -1,0 +1,21 @@
+{
+    "name": "iambrandonchan.github.io",
+    "version": "1.0.0",
+    "description": "a blog for cs371p",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": "https://github.com/iambrandonchan/iambrandonchan.github.io.git",
+    "author": "brandon chan",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/iambrandonchan/iambrandonchan.github.io/issues"
+    },
+    "homepage": "https://github.com/iambrandonchan/iambrandonchan.github.io#readme",
+    "dependencies": {
+        "angular": "^1.6.6",
+        "angular-ui-router": "^1.0.3",
+        "https-server": "^0.1.2"
+    }
+}

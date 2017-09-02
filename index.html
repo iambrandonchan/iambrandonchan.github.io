@@ -1,4 +1,4 @@
-<html>
+<html ng-app="blogApp">
 	<head>
 	 <meta charset="utf-8">
 	    <title>I am Brandon</title>
@@ -7,8 +7,28 @@
 	    <script src="./index.js"> </script>
 	    <link href="style.css" rel="stylesheet">
 	</head>
-	<body>
-	
+	<body ng-controller="blogController">
+	<img src="./images/profilePic.jpg" alt="Brandon Chan" id="img-profile" class="img-circle">
+	<h1> CS371p Fall 2017: Brandon Chan </h1>
+
+	<button ui-sref="week1Blog" ng-ui-sref-active="week1">
+	Week1
+	</button>
+	<div ui-sref="week1Blog" ng-ui-sref-active="week1"> </div>
+	<ui-view></ui-view>
+	<h2> Week 1 Blog
+	<div ng-repeat="question in week1Content">
+	<strong> {{question.prompt}}
+	</strong>
+	<p>
+		{{question.response}}
+	</p>
+	</div>
+	</h2>
+
+
 	</body>
 
 </html>
+
+<!-- http-server -c-1 -->

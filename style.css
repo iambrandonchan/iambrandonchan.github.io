@@ -84,8 +84,8 @@ a:hover{
 /* Specific CSS rules */
 
 #img-profile{
-  width: 100px;
-  height: 100px;
+  width: 300;
+  height: 300px;
   border: 3px solid #cccccc;
 }
 #movies{

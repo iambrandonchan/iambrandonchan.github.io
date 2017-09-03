@@ -5,10 +5,10 @@ var blogApp = angular.module("blogApp", ['ui.router'])
     $scope.week1 = false;
     $scope.week1Content = [{
         prompt: 'What are my expectations of the class?',
-        response: ''
+        response: "I've heard some high expectations for this class."
     }, {
         prompt: 'What did you do this past week?',
-        response: 'Not a'
+        response: "Not a whole lot. I fixed up my resume to reflect my internship this summer. I've been working on a command line tool,"
     }, {
         prompt: "What's in my way?",
         response: ''

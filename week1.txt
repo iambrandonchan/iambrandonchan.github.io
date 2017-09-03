@@ -1,0 +1,23 @@
+Question1: What are my expectations of the class?
+
+Response: I've heard some high expectations for this class. I expect a lot of studying, and self-learning. I could imagine that the projects will be time consuming, but I'll be looking forward to it.
+
+Question2: 'What did you do this past week?',
+
+Response: Not a whole lot. I fixed up my resume to reflect my internship this summer. I've been working on a command line tool that automates commands, and a single-paged web app for my portfolio.
+
+Question3: What's in my way?
+
+Response: I'm unfamiliar with the syntax of C++, let alone C in general. I'm also not very good with pointers. I'll be taking this class, CS371P,  along with CS439, so I believe that this semester will be pretty difficult. However, I'm confident that I will be able to manage both classes.
+
+Question4: What will I do next week?
+
+Response: As far as school goes, I need to read some of the assigned readings for my classes, including this one (and also not get behind in school). I still need to fix up a small part of my resume, and my web app. Other than that, just follow my To-Do list. Actually, I'm having trouble at the moment using JS and AngularJS in my html for this blog page, so I need to look into that some more.
+
+Question5: What's my experience of the class?
+
+Response: This week, I felt that this class is not your typical, powerpoint, cookie cutter class. It was interesting learning some software tools the past couple days, I wish that I could have more of a demonstration, but I understand time constraints for this class can limit demonstrations.
+
+Question6: What's my pick-of-the-week or tip-of-the-week?
+
+Response: I didn't realize that GitHub can host web apps for people. I'm trying to make it dynamic with AngularJS, however I can't figure out why I get errors. Other than that, Docker sounded like a cool resource to use, I plan on checking it out.

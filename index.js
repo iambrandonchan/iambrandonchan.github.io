@@ -8,7 +8,7 @@ var blogApp = angular.module("blogApp", ['ui.router'])
         response: ''
     }, {
         prompt: 'What did you do this past week?',
-        response: ''
+        response: 'Not a'
     }, {
         prompt: "What's in my way?",
         response: ''

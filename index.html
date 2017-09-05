@@ -1,47 +1,182 @@
-<html>
-	<head>
-	 <meta charset="utf-8">
-	    <title>I am Brandon</title>
-		<!-- <script src="./node_modules/angular/angular.js"> </script> -->
-	    <!-- <script src="./node_modules/angular-ui-router/release/angular-ui-router.js"></script> -->
-	    <!-- <script src="./index.js"> </script> -->
-	    <link href="style.css" rel="stylesheet">
-	</head>
-	<!-- <body ng-controller="blogController"> -->
-	<body>
-	<span>
-	<img src="./images/profilePic3.jpg" alt="Brandon Chan" id="img-profile" class="img-square">
-	<h1> CS371p Fall 2017: Brandon Chan </h1>
-	</span>
-<!-- 	<button ui-sref="week1Blog" ng-ui-sref-active="week1">
-	Week1
-	</button> -->
-	<!-- <div ui-sref="week1Blog" ng-ui-sref-active="week1"> </div> -->
-	<!-- <ui-view></ui-view> -->
-	<h2> Week 1 Blog
-	<br>
-	<!-- <div ng-repeat="question in week1Content"> -->
-	<strong> 
-	Question1: What are my expectations of the class?
+<html ng-app="webApp">
+   <head>
+      <meta charset="utf-8">
+      <title>I am Brandon</title>
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700" rel="stylesheet">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+      <script src="./node_modules/angular/angular.js"> </script>
+      <script src="./node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+      <script src="./index.js"> </script>
+      <link href="style.css" rel="stylesheet">
+   </head>
+   <body ng-controller="webController">
+      <div id="wrapper">
+         <div id="left-container">
+            <div class="card text-center">
+               <img src="./images/profilePic.jpg" alt="Brandon Chan" id="img-profile" class="img-square">
+               <h1>Brandon Chan</h1>
+               <h2>Undergraduate<br> at <br> The University of Texas at Austin</h2>
+               <p>
+                  I am a 4th year Computer Science student planning to graduate in the <strong>Fall of 2018</strong>.
+               </p>
+            </div>
+            <div class="card text-center">
+               <ul class="list-inline">
+                  <li class="text-center">
+                     <a href="{{contactInfo.myFacebook}}">
+                     <i class="fa fa-facebook"></i> <br>Facebook
+                     </a>
+                  </li>
+                  <li class="text-center">
+                     <a href="{{contactInfo.myLinkedIn}}">
+                     <i class="fa fa-linkedin"></i> <br>Linkedin
+                     </a>
+                  </li>
+                  <li class="text-center">
+                     <a href="{{contactInfo.myInstagram}}">
+                     <i class="fa fa-instagram"></i> <br>Instagram
+                     </a>
+                  </li>
+                  <li class="text-center">
+                     <a href="{{contactInfo.myGitHub}}">
+                     <i class="fa fa-GitHub"></i> <br>GitHub
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div id="right-container">
+            <div class="card">
+               <h2> 
+                  <span>
+                  <button ng-click="showSkills()">
+                  Skill Set
+                  </button>
+                  </span>
+                  <span>
+                  <button ng-click="showClasses()">
+                  Academics
+                  </button>
+                  </span>
+                  <span>
+                  <button ng-click="showProjects()">
+                  My Projects
+                  </button>
+                  </span>
+                  <span>
+                  <button ng-click="showWorkExperience()">
+                  Work Experience
+                  </button>
+                  </span>
+                  <span>
+                  <button ng-click="showContact()">
+                  Contact Info
+                  </button>
+                  </span>
+                  <span>
+                  <button ng-click="showHobbies()">
+                  Interests
+                  </button>
+                  </span>
+               </h2>
+               <div ng-show="displayDefault">
+                  Click a Button!!!
+               </div>
+               <div ng-show="displayClasses">
+               <h1>
+               <span> GPA: {{academics.GPA}}     
+                </span>
+                <span id="tab"> Major GPA: {{academics.majorGPA}}   </span>
+               </h1>
+                  <h3 ng-repeat="class in academics.classes">
+                     {{class.abbrev}} - {{class.name}}
+                  </h3>
+               </div>
+               <div ng-show="displaySkills">
+                  <h2>
+                     My Software Skills
+                  </h2>
+                  <li ng-repeat="skill in softwareSkillSet">
+                     {{skill.skill}}: {{skill.level}}
+                  </li>
+                  <br>
+                  <h2>
+                     My Business Skills
+                  </h2>
+                  <li ng-repeat="skill in businessSkillSet">
+                     {{skill.skill}}
+                  </li>
+               </div>
+               <div ng-show="displayProjects">
+                  My projects
+               </div>
+               <div ng-show="displayContact">
+                  My Contact Info
+               </div>
+              <div ng-show="displayWorkExperience">
+              <h3 ng-repeat="work in workExperience">
+              <span>
+                {{work.company}}: {{work.occupation}}
+              </span>
+              <li ng-repeat="descrip in work.description">
+              {{descrip}}
+              </li>
+              </h3>
+               </div>
+              <div ng-show="displayHobbies" id="hobbies">
+              <br>
+              <img src="./images/piano.jpg">
+               <img src="./images/hiking.jpeg">
+            <img src="./images/discGolf.jpg">
+                  <img src="./images/cowboys.jpg">
+                <img src="./images/utFootball.jpg">
 
-	</strong>
-	<p>
-	Response: I've heard some high expectations for this class. I expect a lot of studying, and self-learning. I could imagine that the projects will be time consuming, but I'll be looking forward to it.
-	</p>
-	<br>
-	<strong> 
-	Question1: What are my expectations of the class?
-
-	</strong>
-	<p>
-	Response: I've heard some high expectations for this class. I expect a lot of studying, and self-learning. I could imagine that the projects will be time consuming, but I'll be looking forward to it.
-	</p>
-	</div>
-	</h2>
 
 
-	</body>
+               </div>
 
+               </table>
+            </div>
+         </div>
+         <div class="clear">
+         </div>
+         <div class="card" id="footer">
+            <h2>About Me</h2>
+            <p>
+            Hello! My name is Brandon Chan, and I am a undergraduate student studying Computer Science at the University of Texas at Austin. This semester, I am taking an Operating Systems class, and a Object-Oriented Programming class. As of right now, I am teaching myself AngularJS, which is what makes this website seem cool!
+            </p>
+         </div>
+      </div>
+   </body>
 </html>
 
-<!-- http-server -c-1 -->
+               <!--                 <table id="movies">
+                  <tbody>
+                      <tr>
+                          <td>
+                              <img src="../shared/images/space-odyssey.jpg" alt="space odyssey">
+                          </td>
+                          <td>
+                              <h3>2001 - Space Odyssey</h3>
+                              <p>Humanity finds a mysterious, obviously artificial, object buried beneath the Lunar surface and, with the intelligent computer H.A.L. 9000, sets off on a quest.</p>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <img src="../shared/images/monsieur-hulot.jpg" alt="monsieur hulot">
+                          </td>
+                          <td>
+                              <h3>Monsieur Hulot</h3>
+                              <p>Monsieur Hulot comes to a beachside hotel for a vacation, where he accidentally (but good-naturedly) causes havoc.</p>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>
+                              <img src="../shared/images/alien.jpg" alt="alien">
+                          </td>
+                          <td>
+                              <h3>Alien</h3>
+                              <p>The commercial vessel Nostromo receives a distress call from an unexplored planet. After searching for survivors, the crew heads home only to realize that a deadly bioform has joined them.</p>
+                          </td>
+                      </tr>
+                  </tbody> -->

@@ -1,21 +1,23 @@
 {
-    "name": "iambrandonchan.github.io",
+    "name": "cli",
     "version": "1.0.0",
-    "description": "a blog for cs371p",
+    "description": "a command line tool that can execute commands in a child process",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "repository": "https://github.com/iambrandonchan/iambrandonchan.github.io.git",
+    "bin": {
+        "cli": "./index.js"
+    },
+    "repository": "hhttps://github.com/iambrandonchan/iambrandonchan.github.io",
     "author": "brandon chan",
     "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/iambrandonchan/iambrandonchan.github.io/issues"
-    },
-    "homepage": "https://github.com/iambrandonchan/iambrandonchan.github.io#readme",
     "dependencies": {
-        "angular": "^1.6.6",
-        "angular-ui-router": "^1.0.3",
-        "https-server": "^0.1.2"
+        "child_process": "^1.0.2",
+        "colors": "^1.1.2",
+        "file-system": "^2.2.2",
+        "lodash": "^4.17.4",
+        "node-emoji": "^1.8.1",
+        "readline-sync": "^1.4.7"
     }
 }

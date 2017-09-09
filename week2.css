@@ -2,7 +2,7 @@ body{
   background: #CC5500;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  color:  #CC5500;
+  color:  #ffffff;
   font-size: 15px;
   line-height: 1.6em;
 }
@@ -13,7 +13,7 @@ h1, h2, h3{
 }
 
 h1{
-  color: #DD5555;
+  color: #ffffff;
   font-size: 22px;
 }
 
@@ -32,12 +32,12 @@ p{
 }
 
 a{
-  color: #ccc;
+  color: #ffffff;
   text-decoration: none;
 }
 
 a:hover{
-  color: #DD5555;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -70,14 +70,14 @@ a:hover{
   font-size: 25px;
 }
 .btn-red{
-  background-color: #DD5555;
+  background-color: #ffffff;
   color: white;
   font-weight: 500;
   padding: 10px;
   border-radius: 4px;
 }
 .btn-red:hover{
-  background-color: #C61414;
+  background-color: #ffffff;
   color: white;
 }
 
